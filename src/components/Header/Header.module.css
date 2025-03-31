@@ -1,0 +1,20 @@
+.header {
+  background-color: var(--bg-primary);
+  padding: 0.6rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.header svg {
+  display: block;
+}
+
+.logo {
+  fill: var(--bg-accent);
+}
+
+.name {
+  fill: var(--text-primary);
+}

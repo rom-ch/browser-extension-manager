@@ -1,0 +1,71 @@
+.card {
+  background-color: var(--bg-primary);
+  border-radius: 15px;
+  padding: 1.2rem;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 1px solid var(--border-light);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.header img {
+  width: 56px;
+}
+
+.header h3 {
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: var(--text-secondary);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  color: var(--text-primary);
+  border: none;
+  outline: 1px solid var(--border-light);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.options button:hover {
+  color: var(--text-inverse);
+  background-color: var(--bg-accent);
+  outline: none;
+}
+
+.options button:focus-visible {
+  background-color: var(--bg-secondary);
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: var(--border-accent);
+}
+
+[data-theme="dark"] .options button:focus-visible {
+  background-color: var(--bg-secondary-hover);
+}
+
+[data-theme="light"] .card {
+  box-shadow: 0 2px 5px var(--border-light);
+}

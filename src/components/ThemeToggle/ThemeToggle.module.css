@@ -1,0 +1,28 @@
+.toggle {
+  background-color: var(--bg-secondary);
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.toggle img {
+  width: 1.5rem;
+}
+
+.toggle:hover {
+  background-color: var(--bg-secondary-hover);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--border-accent);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .toggle:focus-visible {
+  background-color: var(--bg-secondary-hover);
+}
