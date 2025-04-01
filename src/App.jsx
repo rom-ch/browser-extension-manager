@@ -6,7 +6,7 @@ import { Wrapper } from "./components/Wrapper/Wrapper";
 import data from "./data/data.json";
 
 function App() {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("All");
   const [extensions, setExtensions] = useState(() => {
     const localData = localStorage.getItem("extensions");
     if (localData) return JSON.parse(localData);
